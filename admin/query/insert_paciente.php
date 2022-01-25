@@ -1,32 +1,33 @@
 <?php
-require_once "../../config/conexion.php";
+require_once '../../config/conexion.php';
 
-$name = $_POST['name'];
-$cedula = $_POST['cedula'];
+// $fecha_registro = $_POST['fecha_registro'];
+$cedula = $_POST["cedula"];
+$names = $_POST["names"];
+$telefono = $_POST["telefono"];
 $edad = $_POST['edad'];
-$fecha_nac = $_POST["fecha_nac"];
-$fecha_hi = $_POST['fecha_hi'];
-$lugar_hi = $_POST["lugar_hisopado"];
+$enfe_o_alergia = $_POST["enfe_o_alergia"];
+$fecha_hi = $_POST["fecha_hi"];
+$lugar_hisopado = $_POST["lugar_hisopado"];
 $direccion = $_POST["direccion"];
-$contactos = $_POST["contactos"];
-$positivo = $_POST["positivo"];
-$otros_paci = $_POST["otros_paci"];
-$bolsa_comida = $_POST["bolsa_comida"];
-$medicamento = $_POST["medicamento"];
-$observa = $_POST["observa"];
+$sintomas = $_POST["sintomas"];
+$contactos_en_casa = $_POST["contactos_en_casa"];
+$positivos_en_casa = $_POST["positivos_en_casa"];
 
 if (empty($_POST['save'])) {
   // code...
-  echo "<script>alert('no se ah registrado nada...');history.go(-1);</script>";
-  // header("location: ../index.php?enviado");
-}else{
-  $sql = "INSERT INTO paciente (nombre, cedula, edad, fecha_nac, fecha_hi, lugar_hisopado, direccion, contactos, positivo, otros_paci, bolsa_comida, medicamento, observa) VALUES ('$name','$cedula','$edad','$fecha_nac','$fecha_hi','$lugar_hi','$direccion','$contactos','$positivo','$otros_paci','$bolsa_comida','$medicamento','$observa')";
-  $result = mysqli_query($link,$sql);
+  $sql = "INSERT INTO paciente (cedula, names, telefono, edad, enfe_o_alergia, fecha_hi, lugar_hisopado, direccion, sintomas, contactos_en_casa, positivos_en_casa) 
+  VALUES ('$cedula','$names','$telefono',$edad,'$enfe_o_alergia','$fecha_hi','$lugar_hisopado','$direccion','$sintomas',$contactos_en_casa,$positivos_en_casa)";
+  $result = mysqli_query($link, $sql);
 
   // header("location: ../index.php?enviado");
   echo ("<script>
     window.alert('Enviado con éxito');
-    window.location.href='../add_paciente.php';
+    window.location.href='../addpa.php';
     </script>");
+
+} else {
+
+  echo "<script>alert('no se ah registrado nada...');history.go(-1);</script>";
+  
 }
-?>

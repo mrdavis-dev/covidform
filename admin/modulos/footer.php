@@ -1,5 +1,3 @@
 <footer>
-<small id="" class="form-text text-muted">Este sistema es creado por <a href="https://mrdavis-dev.github.io/">mrdavis-dev</a>.</small><br>
-<p>mrdavis-dev no se hace responsable por los datos introducidos en el sistema, ni tendra relación con los datos. los datos guardados son de suma privacidad y solo seran usados
-por el equipo de trasabilidad.</p>
+<small id="" class="form-text text-muted">Este sistema es creado por <a href="https://www.mrdavisdev.com/">mrdavis-dev</a>.</small><br>
 </footer>

@@ -13,7 +13,7 @@
     <body><br><br>
       <div class="container col-sm-4">
         <div class="wrapper">
-            <img src="logo.png" style="width:20%; text-align:center;">
+        <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/100/000000/external-magnifying-glass-coronavirus-tulpahn-outline-color-tulpahn.png" style="width:20%; text-align:center;"/>
             <h2>Registro</h2>
             <p>Por favor complete este formulario para crear una cuenta.</p>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

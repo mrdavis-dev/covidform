@@ -103,17 +103,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
   <div style="margin-top:150px;" class="container col-sm-4">
     <div class="wrapper">
-        <img src="logo.png" style="width:20%; text-align:center;">
+        <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/100/000000/external-magnifying-glass-coronavirus-tulpahn-outline-color-tulpahn.png" style="width:20%; text-align:center;"/>
         <h2>Iniciar sesión</h2>
-        <p>Plataforma para la gestion de equipos de trasabilidad de panama</p>
+        <p>Plataforma para la gestion de equipos de trazabilidad de panamá</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
+                <label>Usuario:</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"><?php echo $username_err; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
+                <label>Contraseña:</label>
                 <input type="password" name="password" class="form-control">
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
@@ -121,7 +121,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="INICIAR SESIÓN">
             </div>
-            <p>¿No tienes una cuenta? <a href="register.php">Regístrese ahora</a>.</p>
+            <!-- <p>¿No tienes una cuenta? <a href="register.php">Regístrese ahora</a>.</p> -->
         </form>
     </div>
   </div>
