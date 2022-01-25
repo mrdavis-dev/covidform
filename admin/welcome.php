@@ -83,8 +83,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <?php
             require_once "../config/conexion.php";
             //function delete
-            if (isset($_GET['delete'])) {
-                $iddel = $_GET['id'];
+            if (isset($_POST['delete'])) {
+                $iddel = $_POST['id'];
 
                 $sqldel = "DELETE FROM paciente WHERE id='$iddel'";
                 if (mysqli_query($link, $sqldel)) {
