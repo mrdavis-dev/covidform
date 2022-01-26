@@ -32,6 +32,7 @@ if (mysqli_num_rows($result) > 0) {
             <th>Sintomas</th>
             <th>Contactos en casa</th>  
             <th>Positivos en casa</th>
+            <th>Opciones</th>
             </tr>
     ';
 
@@ -51,6 +52,15 @@ if (mysqli_num_rows($result) > 0) {
     <td>' . $row["sintomas"] . '</td>
     <td>' . $row["contactos_en_casa"] . '</td>
     <td>' . $row["positivos_en_casa"] . '</td>
+    <td>
+        <div class="">
+            <form class="" method="post">
+                <input type="text" name="id" style="display:none" value="' . $row["id"] . '"> 
+                <button class="btn btn-danger btn-sm" name="delete" type="submit"><i class="fas fa-trash-alt"></i></button>
+            </form>
+                <a href="query/updateclient.php?id=' . $row["id"] . '"" class="btn btn-info btn-sm mt-1" name="update"><i class="fas fa-pencil-alt"></i></a>
+        </div>
+    </td>        
     </tr>
     ';
     }

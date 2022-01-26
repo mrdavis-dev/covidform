@@ -11,7 +11,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <html lang="es">
 
 <head>
-    <title>MENÚ</title>
+    <title>Tablero</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,11 +19,16 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8632e9fdd4.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+
     <!-- adsense y google -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4118735753673684" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="font-family: 'Mukta', sans-serif;">
 
     <!-- navbar -->
     <?php include("modulos/navbar.php") ?>
@@ -33,9 +38,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <div class="">
             <div style="margin-top:50px;">
                 <h3 class="mb-2">Registrados</h3>
-                <form class="" method="post">
+                <!-- <form class="" method="post">
                     <div class="form-group col-mb-4">
-                        <!-- <label>Para borrar un registro introdusca el id del registro:</label> -->
                         <div class="form-group">
                             <div class="input-group">
                                 <button type="submit" name="delete" class="btn btn-primary mb-2"><i class="fas fa-trash-alt"></i> Borrar</button>
@@ -43,7 +47,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
                 <div class="form-group">
                     <div class="input-group">
                         <input type="text" name="search_text" id="search_text" placeholder="Buscar" class="form-control col-md-6 col-sm-10" />

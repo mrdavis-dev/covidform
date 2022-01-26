@@ -101,11 +101,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+
     <!-- adsense y google -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4118735753673684" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="font-family: 'Mukta', sans-serif;">
     <div style="margin-top:150px;" class="container col-sm-4">
         <div class="wrapper">
             <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/100/000000/external-magnifying-glass-coronavirus-tulpahn-outline-color-tulpahn.png" style="width:20%; text-align:center;" />
