@@ -32,6 +32,7 @@ if (mysqli_num_rows($result) > 0) {
             <th>Sintomas</th>
             <th>Contactos en casa</th>  
             <th>Positivos en casa</th>
+            <th>Nota</th>
             <th>Opciones</th>
             </tr>
     ';
@@ -52,6 +53,7 @@ if (mysqli_num_rows($result) > 0) {
     <td>' . $row["sintomas"] . '</td>
     <td>' . $row["contactos_en_casa"] . '</td>
     <td>' . $row["positivos_en_casa"] . '</td>
+    <td>' . $row["nota"] . '</td>
     <td>
         <div class="">
             <form class="" method="post">

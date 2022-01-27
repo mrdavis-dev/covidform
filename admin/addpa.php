@@ -58,7 +58,7 @@
 
                 <div class="mb-3">
                     <label for=""></label>
-                    <input class="form-control form-control-lg" type="text" placeholder="Edad:" name="edad">
+                    <input class="form-control form-control-lg" type="number" placeholder="Edad:" name="edad">
                 </div>
 
                 <div class="mb-3">
@@ -100,6 +100,11 @@
                 <div class="mb-4">
                     <label for=""></label>
                     <input class="form-control form-control-lg" type="number" placeholder="Positivos en casa:" name="positivos_en_casa">
+                </div>
+
+                <div class="mb-4">
+                    <label for="" class="form-label">Nota:<br><span>"si hay mas de un positvo en su hogar deje sus datos en este cuadro"</span></label>
+                    <textarea class="form-control" name="nota" rows="3"></textarea>
                 </div>
 
                 <div class="col-6 mx-auto mt-4 mb-5">
