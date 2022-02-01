@@ -114,6 +114,11 @@ $id = $_GET["id"];
                         <label for="">Positivos en casa</label>
                         <input class="form-control form-control-lg" type="number" placeholder="Positivos en casa:" name="positivos_en_casa" value="' . $row["positivos_en_casa"] . '">
                     </div>
+
+                    <div class="mb-4">
+                        <label for="" class="form-label">Nota:</label>
+                        <textarea class="form-control" name="nota" rows="3">' . $row["nota"] . '</textarea>
+                    </div>
     
                     <div class="col-6 mx-auto mt-4 mb-5">
                         <button type="submit" name="save" class="btn btn-success btn-lg btn-block">Actualizar datos</button>
