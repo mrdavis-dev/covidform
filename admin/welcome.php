@@ -53,7 +53,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             icon: 'info',
             title: 'Su versión de prueba esta por caducar!',
             html: '<p style="font-weight: bold;">Contrate la verison completa que incluye:</p> <ul> <li>Clasificación de pacientes</li> <li>Gestor de seguimientos</li> <li>Medicamentos por entregar y entregados</li> <li>Notificación de casos nuevos</li> <li>Muúltiples usuarios y centros de salud</li> <li>Api WhatsApp</li></ul>',
-            footer: '<a href="https://wa.link/5qsnw4">Click para más información y detalles al +507 6433-3125</a>'
+            footer: '<a href="https://wa.link/5qsnw4">Click para  más información y detalles al +507 6433-3125</a>'
         })
     </script>
 
